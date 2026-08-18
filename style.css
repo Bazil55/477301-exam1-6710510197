@@ -1,0 +1,24 @@
+body {
+    font-family: "seaweed script", cursive;
+}
+ 
+div {
+    /*style for div elements 1 rem = 16px*/
+    font-size: 2.5rem;
+ 
+}
+.card {
+    /*style for card elements*/
+    background-color: #a8a1e6;
+    border-radius: 10px;
+    border: 3px solid rgb(9, 182, 130);
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1)  ;
+
+}
+a:hover {
+    /*style for anchor elements on hover*/
+    color: #f79c26; /* tomato color on hover */
+    text-decoration: underline;
+    font-size: 1.2rem;
+}
