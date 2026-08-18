@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BAZIL Finess - มาสร้างกล้ามไปด้วยกัน สุขภาพดี เริ่มต้นเลย</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<header>
+        <h1>BAZIL Finess</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <form action="#" method="post">
+    <fieldset>
+        <legend>Personal Information</legend>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required maxlength="50"><br><br>
+        <label for="email">Eamil:</label>
+        <input type="email" id="email" name="emal" pattern="[A-Za-z0-9._%+-]+@psu\.ac\.th" title="Please Enter">
+        <label for="salary">Salary:</label> 
+        <input type="number" name="salary" id="salary" min="0" max="100000" step="1000"><br><br>
+        <label for="national-id">National ID</label>
+        <input type="text" id="national-id" name="national-id" required maxlength="13" pattern="[0-9] {10}" title="Please Enter"><br><br>
+    </fieldset>
+    <fieldset>
+        <legend>Contact Information</legend>
+        <lebel for="phone">Phone:</lebel>
+        <input type="tel" id="phone" name="phone">
+    </fieldset> 
+    <br>
+    <input type="submit" value="submit">
+    <input type="reset" value="cancel">
+     </form>
+</body>
+</html>
