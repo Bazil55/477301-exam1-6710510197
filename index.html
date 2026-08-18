@@ -3,38 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BAZIL Finess - มาสร้างกล้ามไปด้วยกัน สุขภาพดี เริ่มต้นเลย.</title>
+    <title>Bazil Fitness - มาสร้างกล้ามเนื้อไปด้วยกัน สุขภาพดี เริ่มต้นที่นี่</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<header>
-        <h1>BAZIL Finess</h1>
+<body>
+
+    <header>
+        <h1>Bazil Fitness</h1>
+        <p>ฟิตเนสครบวงจร อุปกรณ์ทันสมัย เปิดให้บริการทุกวัน</p>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">เกี่ยวกับเรา</a></li>
+                <li><a href="#pricing">ค่าบริการ</a></li>
+                <li><a href="#contact">สมัครสมาชิก / ติดต่อ</a></li>
             </ul>
         </nav>
     </header>
-    <form action="#" method="post">
-    <fieldset>
-        <legend>Personal Information</legend>
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required maxlength="50"><br><br>
-        <label for="email">Eamil:</label>
-        <input type="email" id="email" name="emal" pattern="[A-Za-z0-9._%+-]+@psu\.ac\.th" title="Please Enter">
-        <label for="salary">Salary:</label> 
-        <input type="number" name="salary" id="salary" min="0" max="100000" step="1000"><br><br>
-        <label for="national-id">National ID</label>
-        <input type="text" id="national-id" name="national-id" required maxlength="13" pattern="[0-9] {10}" title="Please Enter"><br><br>
-    </fieldset>
-    <fieldset>
-        <legend>Contact Information</legend>
-        <lebel for="phone">Phone:</lebel>
-        <input type="tel" id="phone" name="phone">
-    </fieldset> 
-    <br>
-    <input type="submit" value="submit">
-    <input type="reset" value="cancel">
-     </form>
+
+    <main>
+        <section id="about">
+            <h2>ยินดีต้อนรับสู่ Bazil Fitness</h2>
+            <img src="eRZBN2f5ueo6Doq5zWiOLiEYdcFCmvTF3AZRnrRJ.jpg" alt="บรรยากาศภายในฟิตเนส มีเครื่องเล่นเวทเทรนนิ่งและลู่วิ่ง" width="500">
+            <p>Bazil Fitness เป็นที่ออกกำลังกายที่ออกแบบมาเพื่อทุกคนเรามีอุปกรณ์ที่ได้มาตรฐานเพื่อให้ออกกำลังกายได้อย่างเต็มที่</p>
+            <p>นอกจากนี้ เรายังมีเทรนเนอร์ผู้เชี่ยวชาญคอยให้คำปรึกษา แนะนำท่าออกกำลังกายที่ถูกต้อง และจัดโปรแกรมที่เหมาะสมกับเป้าหมายของคุณโดยเฉพาะ!</p>
+        </section>
+
+        <section id="pricing">
+            <h2>อัตราค่าบริการและจุดเด่นของเรา</h2>
+            
+            <article>
+                <h3>แพ็กเกจสมาชิก</h3>
+                <table>
+                    <caption>ราคาแพ็กเกจสมาชิก Bazil Fitness ปี 2026</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">ประเภทสมาชิก</th>
+                            <th scope="col">ระยะเวลา</th>
+                            <th scope="col">ราคา (บาท)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Day Pass (รายวัน)</td>
+                            <td>1 วัน</td>
+                            <td>50</td>
+                        </tr>
+                        <tr>
+                            <td>Silver (รายเดือน)</td>
+                            <td>1 เดือน</td>
+                            <td>1,000</td>
+                        </tr>
+                        <tr>
+                            <td>Gold (รายปี)</td>
+                            <td>1 ปี (คุ้มที่สุด)</td>
+                            <td>11,000</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <article class="features">
+                <h3>สิ่งอำนวยความสะดวก (Facilities)</h3>
+                <ul>
+                    <li>เปิด 08:00 - 24:00 น. ทุกวัน</li>
+                    <li>ห้องอาบน้ำ ฟรี!</li>
+                    <li>มีที่จอดรถจอดฟรี</li>
+                    <li>เครื่องดื่มเวย์โปรตีนและคาเฟ่สุขภาพภายในยิม</li>
+                </ul>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>ฟอร์มสมัครสมาชิกและสอบถามข้อมูล</h2>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend>ข้อมูลส่วนตัว</legend>
+                    
+                    <label for="fullname">ชื่อ-นามสกุล:</label>
+                    <input type="text" id="fullname" name="fullname" required><br><br>
+
+                    <label for="email">อีเมล:</label>
+                    <input type="email" id="email" name="email" required><br><br>
+
+                    <label for="phone">เบอร์โทรศัพท์ (10 หลัก):</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="0891234567"><br><br>
+
+                    <label for="age">อายุ (ปี):</label>
+                    <input type="number" id="age" name="age" min="15" max="80" required><br><br>
+                </fieldset>
+
+                <fieldset>
+                    <legend>เป้าหมายและความสนใจ</legend>
+
+                    <label>เป้าหมายหลักในการออกกำลังกาย:</label><br>
+                    <input type="radio" id="goal-weightloss" name="goal" value="weightloss" checked>
+                    <label for="goal-weightloss">ลดน้ำหนัก / กระชับสัดส่วน</label><br>
+                    
+                    <input type="radio" id="goal-muscle" name="goal" value="muscle">
+                    <label for="goal-muscle">สร้างกล้ามเนื้อ</label><br>
+                    
+                    <input type="radio" id="goal-health" name="goal" value="health">
+                    <label for="goal-health">เพื่อสุขภาพโดยรวม</label><br><br>
+
+                    <input type="checkbox" id="need-trainer" name="need-trainer" value="yes">
+                    <label for="need-trainer">สนใจจ้าง Personal Trainer เพิ่มเติม</label><br><br>
+                </fieldset>
+
+                <button type="submit">ส่งข้อมูล</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Iron Fitness - All Rights Reserved.</p>
+        <p>ผู้พัฒนา: บาซิล มัจฉา (รหัสนักศึกษา: 6710510197)</p>
+    </footer>
+
 </body>
 </html>
